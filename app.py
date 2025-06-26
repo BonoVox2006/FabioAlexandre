@@ -37,7 +37,12 @@ def allowed_file(filename):
 def index():
     with open('config/models.json') as f:
         models = json.load(f)
-    return render_template('index.html', models=models)
+    try:
+        with open('version.txt', 'r') as f:
+            version = f.read().strip()
+    except FileNotFoundError:
+        version = "v_error" # Fallback version
+    return render_template('index.html', models=models, version=version)
 
 @app.route('/upload', methods=['POST'])
 def upload_files():
