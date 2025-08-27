@@ -10,7 +10,7 @@
         "provider": "Qwen"
     },
     {
-        "id": "deepseek/deepseek-chat:free",
+        "id": "deepseek/deepseek-chat-v3-0324:free",
         "name": "DeepSeek: DeepSeek V3 (free)",
         "provider": "DeepSeek"
     }
