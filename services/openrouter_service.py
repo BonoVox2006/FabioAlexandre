@@ -58,7 +58,7 @@ def extract_guests_data(pdf_text, model_name):
                       "entidade": "Associação de Agricultores",
                       "observacoes": "Mencionado genericamente no contexto do debate",
                       "autores": "Nome(s) do(s) deputado(s) autor(es) do requerimento",
-                      "requerimento": "REQ n.7/2025",
+                      "requerimento": "REQ n.7/2025"
                     },
                     {
                       "pronome": "Sr.",
