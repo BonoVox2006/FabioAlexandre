@@ -209,7 +209,7 @@
       // Ensure we're using the array from the model response
       const items = Array.isArray(data[0]) ? data[0] : data;
       
-      const headers = ['Requerimento', 'Autores', 'Nome', 'Cargo', 'Entidade', 'Observações'];
+      const headers = ['Autores', 'Nome', 'Cargo', 'Entidade', 'Observações'];
       let html = `<table class="min-w-full divide-y divide-gray-200">
         <thead class="bg-gray-50">
           <tr>
@@ -219,7 +219,6 @@
         <tbody class="bg-white divide-y divide-gray-200">
           ${items.map(item => `
             <tr>
-              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${item.requerimento || ''}</td>
               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${item.autores || ''}</td>
               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${item.nome || ''}</td>
               <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${item.cargo || ''}</td>
