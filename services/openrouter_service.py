@@ -39,8 +39,7 @@ def extract_guests_data(pdf_text, model_name):
                     - entidade: Organização/instituição que representa
                     - observacoes: Contexto da menção no documento
                     - autores: Nome(s) do(s) deputado(s) autor(es) do requerimento. Se não houver nome explícito, use 'Não identificado(s)'
-                    - requerimento: nome do requerimento, que aparece na forma 'REQ n.#/####'
-
+                    
                   IMPORTANTE:
                     - Mantenha cada entrada mesmo com dados parciais.
                     - Retorne apenas um array JSON válido.
@@ -57,8 +56,7 @@ def extract_guests_data(pdf_text, model_name):
                       "cargo": "Produtor rural",
                       "entidade": "Associação de Agricultores",
                       "observacoes": "Mencionado genericamente no contexto do debate",
-                      "autores": "Nome(s) do(s) deputado(s) autor(es) do requerimento",
-                      "requerimento": "REQ n.7/2025"
+                      "autores": "Nome(s) do(s) deputado(s) autor(es) do requerimento"
                     },
                     {
                       "pronome": "Sr.",
@@ -67,9 +65,8 @@ def extract_guests_data(pdf_text, model_name):
                       "cargo": "Analista Legislativo",
                       "entidade": "Câmara dos Deputados",
                       "observacoes": "Especialista em processo legislativo",
-                      "autores": "Nome(s) do(s) deputado(s) autor(es) do requerimento",
-                      "requerimento": "REQ n.7/2025"
-                    }
+                      "autores": "Nome(s) do(s) deputado(s) autor(es) do requerimento"
+                      }
                   ]
                   """
                 },
