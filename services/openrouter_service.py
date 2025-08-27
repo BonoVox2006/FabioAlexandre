@@ -31,15 +31,15 @@ def extract_guests_data(pdf_text, model_name):
 
                   Os arquivos que você recebe são referentes a requerimentos de audiências públicas no parlamento. Desses arquivos, você deve extrair uma relação de convidados para o debate proposto e se limitará a retornar os convidados explicitamente mencionados.
 
-                  Para cada convidado, você vai tentar identificar:            
+                  Para cada convidado, você vai tentar identificar:
                     - genero: Inferir quando possível ("M", "F" ou "Não identificado")
-                    - requerimento: Número do requerimento, no geral, ele está na tarja no campo superior direito do documento
                     - pronome: Se não estiver especificado, usar "Sr." ou "Sra.", de acordo com o gênero, ou "Não identificado"
                     - nome: Se não houver nome explícito, use "Representante não especificado"
                     - cargo: Descrição do cargo ou qualificações
                     - entidade: Organização/instituição que representa
                     - observacoes: Contexto da menção no documento
-                    - autores: Nome(s) do(s) deputado(s) autor(es) do requerimento. Se não houver nome explícito, use 'Não identificado(s)'.
+                    - autores: Nome(s) do(s) deputado(s) autor(es) do requerimento. Se não houver nome explícito, use 'Não identificado(s)'
+                    - requerimento: nome do requerimento, que aparece na forma 'REQ n.#/####'
 
                   IMPORTANTE:
                     - Mantenha cada entrada mesmo com dados parciais.
@@ -57,15 +57,18 @@ def extract_guests_data(pdf_text, model_name):
                       "cargo": "Produtor rural",
                       "entidade": "Associação de Agricultores",
                       "observacoes": "Mencionado genericamente no contexto do debate",
-                      "autores": "Nome(s) do(s) deputado(s) autor(es) do requerimento"
+                      "autores": "Nome(s) do(s) deputado(s) autor(es) do requerimento",
+                      "requerimento": "REQ n.7/2025",
                     },
                     {
-                      "genero": "Não identificado",
-                      "pronome": "Sr./Sra.",
-                      "nome": "Representante não especificado",
-                      "cargo": "Líder comunitário",
-                      "entidade": "Comunidades tradicionais",
-                      "observacoes": "Participação necessária para representação dos interesses locais"
+                      "pronome": "Sr.",
+                      "genero": "M",
+                      "nome": "João Lineu",
+                      "cargo": "Analista Legislativo",
+                      "entidade": "Câmara dos Deputados",
+                      "observacoes": "Especialista em processo legislativo",
+                      "autores": "Nome(s) do(s) deputado(s) autor(es) do requerimento",
+                      "requerimento": "REQ n.7/2025"
                     }
                   ]
                   """
