@@ -31,8 +31,9 @@ def extract_guests_data(pdf_text, model_name):
 
                   Os arquivos que você recebe são referentes a requerimentos de audiências públicas no parlamento. Desses arquivos, você deve extrair uma relação de convidados para o debate proposto e se limitará a retornar os convidados explicitamente mencionados.
 
-                  Para cada convidado, você vai tentar identificar:
+                  Para cada convidado, você vai tentar identificar:            
                     - genero: Inferir quando possível ("M", "F" ou "Não identificado")
+                    - requerimento: Número do requerimento, no geral, ele está na tarja no campo superior direito do documento
                     - pronome: Se não estiver especificado, usar "Sr." ou "Sra.", de acordo com o gênero, ou "Não identificado"
                     - nome: Se não houver nome explícito, use "Representante não especificado"
                     - cargo: Descrição do cargo ou qualificações
