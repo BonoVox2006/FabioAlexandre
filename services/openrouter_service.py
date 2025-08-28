@@ -21,7 +21,7 @@ def extract_guests_data(pdf_text, model_name):
         completion = client.chat.completions.create(
             extra_headers={
                 "HTTP-Referer": os.getenv("SITE_URL", "http://localhost:5000"),
-                "X-Title": "Extrator de Convidados - Requerimentos",
+                "X-Title": "Convidados - Requerimentos",
             },
             model=model_name,
             messages=[
@@ -32,7 +32,7 @@ def extract_guests_data(pdf_text, model_name):
                   Os arquivos que você recebe são referentes a requerimentos de audiências públicas no parlamento. Desses arquivos, você deve extrair uma relação de convidados para o debate proposto e se limitará a retornar os convidados explicitamente mencionados.
 
                   Para cada convidado, você vai tentar identificar:
-                    - requerimento: Número do requerimento (ex: "REQ n.123/2024"). Se não encontrar, use "Não identificado".
+                    - requerimento: Número do requerimento (ex: "REQ 123/2024"). Se não encontrar, use "Não identificado".
                     - genero: Inferir quando possível ("M", "F" ou "Não identificado")
                     - pronome: Se não estiver especificado, usar "Sr." ou "Sra.", de acordo com o gênero, ou "Não identificado"
                     - nome: Se não houver nome explícito, use "Representante não especificado"
@@ -52,7 +52,7 @@ def extract_guests_data(pdf_text, model_name):
 
                   [
                     {
-                      "requerimento": "REQ n.9/2025",
+                      "requerimento": "REQ 9/2025",
                       "autores": "Deputado João Pedra",
                       "pronome": "Sr.",
                       "genero": "M",
@@ -62,7 +62,7 @@ def extract_guests_data(pdf_text, model_name):
                       "observacoes": "Mencionado genericamente no contexto do debate"                      
                     },
                     {
-                      "requerimento": "REQ n.9/2025",
+                      "requerimento": "REQ 9/2025",
                       "autores": "Deputado João Pedra",
                       "pronome": "Sr./Sra.",
                       "genero": "Não identificado",
