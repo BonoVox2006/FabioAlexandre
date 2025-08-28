@@ -1,10 +1,5 @@
 [
     {
-        "id": "google/gemma-3-27b-it:free",
-        "name": "Google: Gemma 3 27B (free)",
-        "provider": "Google"
-    },
-    {
         "id": "qwen/qwen3-14b:free",
         "name": "Qwen: Qwen3 14B (free)",
         "provider": "Qwen"
@@ -18,5 +13,10 @@
         "id": "tencent/hunyuan-a13b-instruct:free",
         "name": "Tencent: Hunyuan A13B Instruct (free)",
         "provider": "Tencent"
+    },
+    {
+        "id": "google/gemma-3-27b-it:free",
+        "name": "Google: Gemma 3 27B (free)",
+        "provider": "Google"
     }
 ]
