@@ -3,26 +3,6 @@
         "id": "nvidia/nemotron-nano-9b-v2:free",
         "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
         "provider": "NVIDIA"
-    },
-    {
-        "id": "mistralai/mistral-7b-instruct:free",
-        "name": "Mistral: 7B Instruct (free)",
-        "provider": "Mistral"
-    },
-    {
-        "id": "nousresearch/hermes-2-pro-llama-3-8b:free",
-        "name": "Nous: Hermes 2 Pro Llama 3 8B (free)",
-        "provider": "NousResearch"
-    },
-    {
-        "id": "sao10k/l3-euryale-70b:free",
-        "name": "Sao10K: Euryale L3 70B (free)",
-        "provider": "Sao10K"
-    },
-    {
-        "id": "openrouter/free",
-        "name": "OpenRouter: Auto Free Router",
-        "provider": "OpenRouter"
     }
 ]
 
