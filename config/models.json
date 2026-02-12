@@ -1,23 +1,23 @@
 [
     {
-        "id": "deepseek/deepseek-chat-v3-0324:free",
-        "name": "DeepSeek: DeepSeek Chat V3 (free)",
-        "provider": "DeepSeek"
-    },
-    {
-        "id": "meta-llama/llama-3.3-70b-instruct:free",
-        "name": "Meta: Llama 3.3 70B Instruct (free)",
-        "provider": "Meta"
-    },
-    {
-        "id": "openai/gpt-oss-20b:free",
-        "name": "OpenAI: GPT-OSS 20B (free)",
-        "provider": "OpenAI"
-    },
-    {
-        "id": "nvidia/nemotron-3-nano-30b-a3b:free",
-        "name": "NVIDIA: Nemotron Nano 30B (free)",
+        "id": "nvidia/nemotron-nano-9b-v2:free",
+        "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
         "provider": "NVIDIA"
+    },
+    {
+        "id": "mistralai/mistral-7b-instruct:free",
+        "name": "Mistral: 7B Instruct (free)",
+        "provider": "Mistral"
+    },
+    {
+        "id": "nousresearch/hermes-2-pro-llama-3-8b:free",
+        "name": "Nous: Hermes 2 Pro Llama 3 8B (free)",
+        "provider": "NousResearch"
+    },
+    {
+        "id": "sao10k/l3-euryale-70b:free",
+        "name": "Sao10K: Euryale L3 70B (free)",
+        "provider": "Sao10K"
     },
     {
         "id": "openrouter/free",
