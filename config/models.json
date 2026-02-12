@@ -1,22 +1,28 @@
 [
     {
-        "id": "qwen/qwen3-14b:free",
-        "name": "Qwen: Qwen3 14B (free)",
-        "provider": "Qwen"
+        "id": "deepseek/deepseek-chat-v3-0324:free",
+        "name": "DeepSeek: DeepSeek Chat V3 (free)",
+        "provider": "DeepSeek"
     },
     {
-        "id": "z-ai/glm-4.5-air:free",
-        "name": "Z.AI: GLM 4.5 Air (free)",
-        "provider": "Z.Ai"
+        "id": "meta-llama/llama-3.3-70b-instruct:free",
+        "name": "Meta: Llama 3.3 70B Instruct (free)",
+        "provider": "Meta"
     },
     {
-        "id": "tencent/hunyuan-a13b-instruct:free",
-        "name": "Tencent: Hunyuan A13B Instruct (free)",
-        "provider": "Tencent"
+        "id": "openai/gpt-oss-20b:free",
+        "name": "OpenAI: GPT-OSS 20B (free)",
+        "provider": "OpenAI"
     },
     {
-        "id": "google/gemma-3-27b-it:free",
-        "name": "Google: Gemma 3 27B (free)",
-        "provider": "Google"
+        "id": "nvidia/nemotron-3-nano-30b-a3b:free",
+        "name": "NVIDIA: Nemotron Nano 30B (free)",
+        "provider": "NVIDIA"
+    },
+    {
+        "id": "openrouter/free",
+        "name": "OpenRouter: Auto Free Router",
+        "provider": "OpenRouter"
     }
 ]
+
