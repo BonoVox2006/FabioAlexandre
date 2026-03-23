@@ -3,6 +3,20 @@
         "id": "nvidia/nemotron-nano-9b-v2:free",
         "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
         "provider": "NVIDIA"
-    }
+    },
+  {
+    "id": "openai/gpt-4.1",
+    "name": "OpenAI: GPT-4.1",
+    "provider": "OpenAI"
+  },
+  {
+    "id": "anthropic/claude-3.5-sonnet",
+    "name": "Anthropic: Claude 3.5 Sonnet",
+    "provider": "Anthropic"
+  },
+  {
+    "id": "google/gemini-2.0-flash-001",
+    "name": "Google: Gemini 2.0 Flash",
+    "provider": "Google"
+  }
 ]
-
